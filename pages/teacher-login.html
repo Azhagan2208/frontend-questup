@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QUESTUP Login</title>
+  <link rel="stylesheet" href="../css/teacher-login.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="icon" href="../assests/favicon-32x32.png">
+</head>
+
+<body>
+  <!-- Header/Logo -->
+  <header class="header">
+    <div class="logo-container">
+      <div class="logo">Q</div>
+      <span class="logo-text">QUESTUP</span>
+    </div>
+  </header>
+
+  <!-- Login Form Container -->
+  <div class="login-container">
+    <div class="back-link">
+      <a href="../index.html"><i class="fas fa-arrow-left"></i> BACK</a>
+    </div>
+
+    <div class="login-form-box">
+      <h2>Welcome Back</h2>
+      <p>Sign in to your teacher account to manage Q&amp;A sessions</p>
+
+      <!-- FULL LOGIN FORM -->
+      <form id="loginForm">
+        <label for="email">Email Address</label>
+        <div class="input-group">
+          <input type="email" id="email" placeholder="Enter your email" required />
+        </div>
+
+        <label for="password">Password</label>
+        <div class="input-group password-group">
+          <input type="password" id="password" placeholder="Enter your password" required />
+          <i class="fas fa-eye password-toggle"></i>
+        </div>
+
+        <div class="options-row">
+          <div class="remember-me">
+            <input type="checkbox" id="remember" />
+            <label for="remember">Remember me</label>
+          </div>
+          <a href="#" class="forgot-password">Forgot password?</a>
+        </div>
+
+        <!-- PROPER SUBMIT BUTTON (not a link) -->
+        <button type="submit" class="sign-in-button">SIGN IN</button>
+      </form>
+
+      <p class="signup-prompt">
+        Don't have an account?
+        <a href="./teacher-feedback.html" class="request-link">Request for a user</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- JS for login API -->
+  <script src="../js/config.js"></script>
+  <script src="../js/api-utils.js"></script>
+  <script src="../js/teacher-login.js"></script>
+</body>
+
+</html>

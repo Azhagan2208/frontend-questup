@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sample Room - QuestUp</title>
+  <link rel="stylesheet" href="../css/teacher-dashboard.css" />
+  <link rel="icon" href="../assests/favicon-32x32.png">
+</head>
+
+<body>
+  <!-- BACK -->
+  <a href="./create-room.html" class="back-btn">← BACK</a>
+
+  <!-- TITLE -->
+  <div class="room-title">
+    <h1>Sample Room</h1>
+    <div class="session-id">Session : <strong>WNF001</strong></div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat-card">
+      <div class="stat-title">Total Questions</div>
+      <div class="stat-value">0</div>
+      <div class="stat-emoji">❓</div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-title">Pending</div>
+      <div class="stat-value">0</div>
+      <div class="stat-emoji">⏳</div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-title">Answered</div>
+      <div class="stat-value">0</div>
+      <div class="stat-emoji">✔️</div>
+    </div>
+  </div>
+
+  <!-- ROOM CODE -->
+  <div class="room-box">
+    <div class="room-box-header">Room Code</div>
+    <div class="room-box-sub">
+      Share this code with students to join your session
+    </div>
+
+    <div class="code-wrapper">
+      <div class="room-code">WNF001</div>
+      <button class="copy-btn">Copy</button>
+    </div>
+  </div>
+
+  <!-- FILTER + SORT -->
+  <div class="options-row">
+    <div>
+      <label>Filter : </label>
+      <select>
+        <option>All Questions</option>
+        <option>Pending</option>
+        <option>Answered</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Sort : </label>
+      <select>
+        <option>Most Votes</option>
+        <option>Newest</option>
+        <option>Oldest</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- EMPTY STATE -->
+  <div class="empty-state">
+    <div class="emoji">❔</div>
+    <h2>No questions yet</h2>
+    <p>
+      Questions from students will appear here once they join your session.
+    </p>
+  </div>
+  <script src="../js/config.js"></script>
+  <script src="../js/api-utils.js"></script>
+  <script src="../js/teacher-dashboard.js"></script>
+</body>
+
+</html>

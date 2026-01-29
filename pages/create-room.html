@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teacher Dashboard - QuestUp</title>
+  <link rel="stylesheet" href="../css/create-room.css" />
+  <link rel="icon" href="../assests/favicon-32x32.png">
+</head>
+
+<body>
+  <!-- NAVBAR WITH FIXED LOGO -->
+  <div class="navbar">
+    <div class="logo">Q</div>
+    <div class="logo-text">QUESTUP</div>
+  </div>
+
+  <!-- MAIN CONTAINER -->
+  <div class="container">
+    <!-- BACK BUTTON -->
+    <div class="back-wrapper">
+      <a class="back-button" href="#" id="logoutBtn">← Logout</a>
+    </div>
+
+    <!-- HEADER -->
+    <div class="dashboard-header">
+      <div class="header-content">
+        <h1>Teacher Dashboard</h1>
+        <p>Manage your Q&A sessions</p>
+      </div>
+
+      <a href="#openModal" class="new-session-button">+ New Session</a>
+    </div>
+
+    <!-- EMPTY STATE -->
+    <div class="empty-state">
+      <h2>Welcome to QuestUp</h2>
+      <p>Create your first Q&A session to start collecting questions.</p>
+
+      <a href="#openModal" class="create-first-button">
+        + Create your First session
+      </a>
+    </div>
+  </div>
+
+  <!-- POPUP -->
+  <div id="openModal" class="modal-overlay">
+    <div class="modal">
+      <h2>Create New Session</h2>
+
+      <div class="form-group">
+        <label for="sessionTitle">Session Title</label>
+        <input id="sessionTitle" type="text" placeholder="e.g., Physics Chapter 5 Q&A" />
+      </div>
+
+      <div class="form-actions">
+        <a href="./create-room.html" class="cancel-button">Cancel</a>
+
+        <a href="./teacher-dashboard.html" class="create-button-link">
+          Create Session
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="../js/config.js"></script>
+  <script src="../js/api-utils.js"></script>
+  <script src="../js/create-room.js"></script>
+</body>
+
+</html>

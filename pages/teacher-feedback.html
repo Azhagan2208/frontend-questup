@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request Teacher Access</title>
+  <link rel="stylesheet" href="../css/teacher-feedback.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="../assests/favicon-32x32.png">
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div style="display: flex; gap: 10px; align-items: center">
+      <div class="logo-box">Q</div>
+      <div class="logo-text">QUEST<span class="up">UP</span></div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-container">
+    <h1 class="page-title">Request Teacher Access</h1>
+    <p class="page-subtitle">
+      Fill out the form below and we'll send you login credentials via email.
+    </p>
+
+    <div class="card">
+      <form class="access-form">
+        <div class="form-group">
+          <label for="username">Username <span class="required">*</span></label>
+          <input type="text" id="username" name="username" placeholder="Enter your username" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail Address <span class="required">*</span></label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password <span class="required">*</span></label>
+          <input type="password" id="password" name="password" placeholder="Create a password" required />
+        </div>
+
+        <div class="form-group">
+          <label for="institute">Institute/School <span class="required">*</span></label>
+          <input type="text" id="institute" name="institute" placeholder="Enter your institute name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Department/Subject <span class="required">*</span></label>
+          <input type="text" id="subject" name="subject" placeholder="Enter your department or subject" required />
+        </div>
+
+        <div class="info-box">
+          <div class="info-title">After Submission</div>
+          <p class="info-text">
+            Our team will review your request and send login credentials to
+            your email within 24–48 hours.
+          </p>
+        </div>
+
+        <!-- Submit and Back buttons -->
+        <button type="submit" class="submit-btn">Submit Access Request</button>
+        <a href="../index.html" class="back-home-btn">Back to Home</a>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/config.js"></script>
+  <script>
+    // Logic moved to ../js/teacher-feedback.js
+  </script>
+  <script src="../js/teacher-feedback.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8faff;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------------- Confirmation Box ---------------- */
+.confirmation-box {
+  background: #fff;
+  padding: 50px 40px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(65, 105, 225, 0.15);
+  text-align: center;
+  max-width: 420px;
+  width: 90%;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ---------------- Title ---------------- */
+.confirmation-box h2 {
+  color: #4169e1;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+/* ---------------- Message ---------------- */
+.confirmation-box p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+/* Highlighted time text */
+.confirmation-box strong {
+  color: #2f54eb;
+  font-weight: 600;
+}
+
+/* ---------------- Back Button ---------------- */
+.back-btn {
+  display: inline-block;
+  background-color: #4169e1;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(65, 105, 225, 0.25);
+}
+
+.back-btn:hover {
+  background-color: #3255c5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(65, 105, 225, 0.35);
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 480px) {
+  .confirmation-box {
+    padding: 40px 25px;
+  }
+
+  .confirmation-box h2 {
+    font-size: 22px;
+  }
+
+  .confirmation-box p {
+    font-size: 14px;
+  }
+
+  .back-btn {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+}
+}

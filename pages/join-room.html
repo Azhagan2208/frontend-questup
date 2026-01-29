@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuestUp - Join Session</title>
+  <link rel="stylesheet" href="../css/join-room.css" />
+  <link rel="icon" href="../assests/favicon-32x32.png">
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">Q</div>
+    <div class="logo-text">QUEST<span class="up">UP</span></div>
+  </div>
+
+
+  <!-- Main Content -->
+  <div class="content-wrapper">
+    <div class="page-title">Join Session</div>
+    <div class="page-subtitle">Enter the room code to participate</div>
+
+    <div class="card">
+      <div class="icon-circle">
+        <svg class="icon-users" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+          <circle cx="9" cy="7" r="4"></circle>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+        </svg>
+      </div>
+
+      <h1 class="card-title">Join Q&amp;A Session</h1>
+      <p class="card-description">
+        Enter the room code provided by your teacher to start<br />
+        asking questions anonymously.
+      </p>
+
+      <div class="input-group">
+        <input type="text" placeholder="ENTER ROOM CODE eg. ABC123" />
+      </div>
+
+      <a href="./post-doubt.html" class="join-link">Join Session</a>
+      <a href="../index.html" class="back-home-btn">Back to Home</a>
+
+      <div class="info-box">
+        <div class="info-title">What you can do:</div>
+        <ul class="info-list">
+          <li>Ask questions anonymously</li>
+          <li>Vote on important questions</li>
+          <li>See teacher responses in real-time</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="../js/config.js"></script>
+  <script src="../js/api-utils.js"></script>
+  <script src="../js/join-room.js"></script>
+</body>
+
+</html>
