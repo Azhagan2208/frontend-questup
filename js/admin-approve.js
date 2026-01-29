@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:8000';
+const API_URL = 'https://backend-questup.onrender.com/';
 
 document.addEventListener('DOMContentLoaded', () => {
     checkAuth();
